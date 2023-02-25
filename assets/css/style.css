@@ -1,0 +1,214 @@
+/*
+GLOBAL
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 1rem;
+}
+
+h2 {
+    font-size: 2rem;
+    padding: 1% 0;
+}
+
+h3 {
+    font-size: 2rem;
+    padding: 1% 0;
+}
+
+input {
+    font-size: 2rem;
+    margin-bottom: 1%;
+}
+
+.check {
+    height: 2rem;
+    width: 2rem;
+}
+
+label {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 2rem;
+}
+
+p {
+    padding-left: 1%;
+}
+
+#nettoBrutto {
+    font-size: 2rem;
+    padding: 1%;
+}
+
+/*
+BODY
+*/
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    padding: 0 5%;
+}
+
+/*
+HEADER
+*/
+
+header h1 {
+    font-size: 4rem;
+    padding: 5%;
+    display: flex;
+    justify-content: center;
+}
+
+main section form p {
+    color: firebrick;
+    display: flex;
+    justify-content: center;
+    padding: 1%;
+    font-size: 2rem;
+}
+
+
+
+
+
+/*
+MAIN
+*/
+main {
+    display: flex;
+    flex-direction: column;
+    border: 2px solid black;
+    border-radius: 5px;
+
+}
+
+main section {
+    background-color: rgb(232, 241, 244);
+    margin-bottom: 1%;
+}
+
+main section form {
+    padding: 1%;
+}
+
+main section form div {
+    display: flex;
+}
+
+.check {
+    margin-right: 1%;
+}
+
+main section form .box div {
+    margin-right: 5%;
+}
+
+#betrag {
+    width: 65%;
+}
+
+#buttonSection {
+    padding: 1%;
+    background: none;
+}
+
+#rechnerButton {
+    width: 100%;
+    padding: 1% 0;
+    color: #fff;
+    background-color: royalblue;
+    border-radius: 5px;
+    font-size: 1.5rem;
+    font-weight: bolder;
+}
+
+/*
+FOOTER
+*/
+footer {
+    display: flex;
+    flex-direction: column;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+footer h2 {
+    color: royalblue;
+    padding: 1%;
+}
+
+footer h3 {
+    padding: 1%;
+}
+
+footer section {
+    background-color: rgb(232, 241, 244);
+    margin-bottom: 1%;
+}
+
+footer section form {
+    padding: 1%;
+}
+
+/*
+//let output = 0;
+//let mwstBetrag = 0;
+//let output1 = mwstBetrag;
+
+
+let betrag = Number(document.getElementById('betrag').value);
+console.log(betrag);
+
+
+const NeBru = (value) => {
+    console.log(value);
+    bruNet = value;
+    switch (value) {
+        case "Netto zu Brutto": document.getElementById("output2").innerHTML = "Bruttobetrag (Endpreis)";
+            break;
+        case "Brutto zu Netto": document.getElementById("output2").innerHTML = "Nettobetrag";
+    }
+    return bruNet;
+};
+
+const mwSt = (value) => {
+    console.log(value);
+    welcheMwst = value;
+    switch (value) {
+        case "19%": steuer = 1.19;
+            break;
+        case "7%": steuer = 1.07;
+    }
+    console.log(steuer);
+    return steuer;
+};
+
+const berechne = () => {
+    console.log(betrag);
+    console.log(steuer)
+    switch (bruNet) {
+        case "Netto zu Brutto": output = betrag * steuer;
+            console.log(output);
+            mwstBetrag = output - betrag;
+            break;
+        case "Brutto zu Netto": output = betrag / steuer;
+            mwstBetrag = betrag - output;
+            break;
+    }
+
+    outputAufgerundet = output.toFixed(2);
+    outputMwst = mwstBetrag.toFixed(2);
+
+    document.getElementById("output1").innerHTML = outputAufgerundet + "€";
+}
+*/

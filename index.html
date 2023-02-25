@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Mehrwertsteuer-Rechner</h1>
+
+    </header>
+    <main>
+        <section>
+            <form action="">
+                <h2>Was soll berechnet werden?</h2>
+                <!--onchange="NettoOderBrutto(value)" -->
+                <div><input value="Netto zu Brutto" name="bretto" class="check" type="radio" id="checkbox1">
+                    <label for="checkbox1">Mehrwertsteuer aufschlagen (Netto zu Brutto)</label>
+                </div>
+                <br>
+                <!-- onchange="NettoOderBrutto(value)"-->
+                <div><input value="Brutto zu Netto" name="bretto" class="check" type="radio" id="checkbox2">
+                    <label for="checkbox2">Mehrwertsteuer abziehen (Brutto zu Netto)</label>
+                </div>
+                <p id="noNetBrut"></p>
+            </form>
+        </section>
+        <section>
+            <form action="">
+                <h2>Mehrwertsteuersatz</h2>
+                <div class="box">
+                    <div>
+                        <!--onchange="mwSt(value)" -->
+                        <input value="19%" name="mwst" class="check" type="radio" id="check19mwst">
+                        <label for="check19mwst"> 19%</label>
+                    </div>
+                    <div>
+                        <!-- onchange="mwSt(value)"-->
+                        <input value="7%" name="mwst" class="check" type="radio" id="check7mwst">
+                        <label for="check7mwst"> 7%</label>
+                    </div>
+                </div>
+                <p id="welcheMwst"></p>
+            </form>
+        </section>
+        <section>
+            <p id="nettoBrutto"></p>
+            <form>
+
+                <!--onchange="input()" -->
+                <input id="betrag" name="betragInput" type="number" placeholder="Hier Betrag eingeben"><label
+                    for="nettobetrag" id="nettoInput"> €</label>
+                <p id="keinBetrag"></p>
+            </form>
+        </section>
+        <section id="buttonSection">
+            <button onclick="berechne()" id="rechnerButton" type="button">BERECHNEN</button>
+        </section>
+    </main>
+    <footer>
+        <h2>ERGEBNIS</h2>
+        <section>
+            <h3>Mehrwertsteuerbetrag</h3>
+            <p id="output1"></p>
+        </section>
+        <section>
+            <h3 id="h3output"></h3>
+            <p id="output2"></p>
+        </section>
+    </footer>
+    <script src="./assets/js/main.js"></script>
+</body>
+
+</html>
